@@ -254,3 +254,16 @@
   });
 
 })()
+
+function sendMail(params) {
+  var tempParams = {
+    from_name : document.getElementById("fromName").value,
+    to_name : document.getElementById("toName").value,
+    message : document.getElementById("message").value,
+    
+  };
+  emailjs.send('gmail', 'template_hzpn2i8', tempParams).then(function(res)
+   {
+            console.log("sucess", res.status)
+  })
+}

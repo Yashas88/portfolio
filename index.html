@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Yashas D B's Portfolio</title>
+  <title>Yashas D B | Full Stack Web Developer</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -60,6 +60,8 @@
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="https://drive.google.com/file/d/1k2eEujuy5tgcrQmd15e9ErWqkMCQaODV/view?usp=sharing" 
             class="nav-link scrollto" target="_blank"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Skills</span></a></li>
+
           <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
           <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -133,13 +135,13 @@
 
         <div class="row skills-content">
 
-               <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
-               <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-css-no-code-flaticons-flat-flat-icons.png"/>
-               <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
-               <img src="https://img.icons8.com/ios-glyphs/30/000000/react.png"/>
-               <img src="https://img.icons8.com/color/48/000000/nodejs.png"/>
-               <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png"/>
-               <img src="https://img.icons8.com/ios-filled/50/000000/git.png"/>
+               <img src="https://img.icons8.com/color/80/000000/html-5--v1.png"/>
+               <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/80/000000/external-css-no-code-flaticons-flat-flat-icons.png"/>
+               <img src="https://img.icons8.com/color/80/000000/javascript--v1.png"/>
+               <img src="https://img.icons8.com/ios-glyphs/80/000000/react.png"/>
+               <img src="https://img.icons8.com/color/80/000000/nodejs.png"/>
+               <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/80/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png"/>
+               <img src="https://img.icons8.com/ios-filled/80/000000/git.png"/>
           </div>
 
         </div>
@@ -170,9 +172,10 @@
                   Kohl’s is an American E-commerce online website  for Clothing, Kitchen, Toys & More. 
                   In this Project we made clone of Kohl's departmental store company web application with our ability and strength
                    in technology stack that we learned so far in the Masai School,we were able to clone the frontend of Kohl's.
-                   This project is build as a part of masai school(30 weeks of boot camp) curriculam project and completed in a duration of 6 days with team of 6.
                 </p>
                 <a href="https://github.com/chamarthivamsidev/kohls_clone" target="_blank" class="btn btn-success btn-lg float-right">View</a>
+                <a href="chamarthivamsidev.github.io/kohls_clone" target="_blank" class="btn btn-success btn-lg float-right">Go Live</a>
+
               </div>
             </div>
           </div>
@@ -191,6 +194,8 @@
                   Through our range of advanced skincare products, we address lifestyle needs that are often overlooked.
                 </p>
                 <a href="https://github.com/MohdTazammul/Dot-and-Key-Skincare-clone" target="_blank" class="btn btn-success btn-lg float-right">View</a>
+                <a href="mohdtazammul.github.io/dot-and-key-sk" target="_blank" class="btn btn-success btn-lg float-right">Go Live</a>
+
               </div>
             </div>
           </div>
@@ -208,6 +213,8 @@
                   It has a range of organic food, imported ingredients and exotic foods.
                 </p>
                 <a href="https://github.com/Yashas88/NatureBasket-Website" target="_blank" class="btn btn-success btn-lg float-right">View</a>
+                <a href="mohdtazammul.github.io/dot-and-key-sk" target="_blank" class="btn btn-success btn-lg float-right">Go Live</a>
+
               </div>
             </div>
           </div>
@@ -254,7 +261,8 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+            <form class="php-email-form" id = "my_form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -271,14 +279,14 @@
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message" rows="10" required id = "message"></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
+                <!-- <div class="error-message"></div> -->
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button onclick="sendMail()">Send Message</button></div>
+              <div class="text-center"><button type="submit" onclick="sendEmail()">Send Message</button></div>
             </form>
           </div>
 
@@ -288,7 +296,12 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+  emailjs.init("il5QcpYbNxzcVgIAf");
+  })();
+  </script>
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
@@ -304,7 +317,7 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
-
+</div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->

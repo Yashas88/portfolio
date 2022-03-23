@@ -11,8 +11,11 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  width: 1300px;
 }
-
+.about_all {
+  margin-left: 100px;
+}
 a {
   color: #149ddd;
   text-decoration: none;
@@ -116,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #main {
   margin-left: 300px;
+  width: 1200px;
 }
 
 @media (max-width: 1199px) {

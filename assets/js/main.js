@@ -255,15 +255,22 @@
 
 })()
 
-function sendMail(params) {
-  var tempParams = {
-    from_name : document.getElementById("fromName").value,
-    to_name : document.getElementById("toName").value,
-    message : document.getElementById("message").value,
-    
-  };
-  emailjs.send('gmail', 'template_hzpn2i8', tempParams).then(function(res)
-   {
-            console.log("sucess", res.status)
-  })
+function sendEmail(params) {
+   var tempParams = {
+     from_name : document.getElementById("name").value,
+     subject : document.getElementById("subject").value,
+      message : document.getElementById("message").value,
+   };
+   emailjs.send("service_kykyrqr", "template_6gtmtvl", tempParams).then(function(res) {
+     console.log("sucess", res.status)
+   })
+   
 }
+const form = document.getElementById('my_form');
+
+form.addEventListener('submit', function handleSubmit(event) {
+  event.preventDefault();
+
+ 
+  form.reset();
+});

@@ -13,6 +13,9 @@ body {
   color: #272829;
   width: 1300px;
 }
+.bodyclass {
+  width: 1300px;
+}
 .about_all {
   margin-left: 100px;
 }

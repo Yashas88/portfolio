@@ -288,10 +288,10 @@ section {
   position: relative;
   color: #173b6c;
 }
-.section-title img {
+/* .section-title img {
   width: 150px;
   height: 150px;
-}
+} */
 .section-title h2::after {
   content: "";
   position: absolute;
